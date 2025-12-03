@@ -1,0 +1,49 @@
+# Bun Configuration File
+# https://bun.sh/docs/runtime/bunfig
+
+# Workspace configuration
+workspaces = ["apps/*", "packages/*"]
+
+[install]
+# Lockfile configuration
+lockfile = true
+# Registry configuration
+registry = "https://registry.npmjs.org"
+# Cache configuration
+cache = ".bun/cache"
+# Install strategies
+auto = "auto"
+# Peer dependencies
+peer = true
+# Optional dependencies
+optional = true
+
+[install.scopes]
+# Private registry scopes (if needed)
+# "@myorg" = { url = "https://npm.myorg.com", token = "$MY_ORG_TOKEN" }
+
+[run]
+# Prefer local bin over global
+prefer = "bin"
+
+[test]
+# Test runner configuration
+coverage = false
+preload = []
+
+[dev]
+# Development server configuration
+port = 3000
+
+[define]
+# Global constants
+"process.env.NODE_ENV" = "\"development\""
+
+[loader]
+# File loaders
+".png" = "file"
+".jpg" = "file"
+".jpeg" = "file"
+".gif" = "file"
+".svg" = "file"
+".webp" = "file"
