@@ -1,28 +1,59 @@
+# ============================================
 # Dependencies
+# ============================================
 node_modules/
 .pnp
 .pnp.js
+.yarn/
 .yarn/install-state.gz
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
+# ============================================
+# Bun
+# ============================================
+.bun/
+bun.lockb
+
+# ============================================
 # Testing
+# ============================================
 coverage/
 *.lcov
 .nyc_output
+test-results/
+playwright-report/
+playwright/.cache/
 
-# Production
+# ============================================
+# Build Output
+# ============================================
 dist/
 build/
 out/
+.next/
+.nuxt/
+.output/
+.vitepress/dist
+.temp/
+*.tsbuildinfo
+.rollup.cache/
 
-# Environment files
+# ============================================
+# Environment Files
+# ============================================
 .env
 .env*.local
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.backup
 
+# ============================================
 # Logs
+# ============================================
 logs/
 *.log
 npm-debug.log*
@@ -32,25 +63,98 @@ lerna-debug.log*
 pnpm-debug.log*
 bun-debug.log*
 
-# Runtime data
+# ============================================
+# Runtime Data
+# ============================================
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Directory for instrumented libs
-lib-cov
+# ============================================
+# Cache Directories
+# ============================================
+.cache/
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.npm
+.node_repl_history
 
-# Misc
-.DS_Store
-*.pem
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+*.tmp
+*.temp
 *.swp
 *.swo
 *~
+lib-cov
 
-# Debug
-.vscode-test
+# ============================================
+# Operating System
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# IDEs and Editors
+# ============================================
+# VSCode
+.vscode/
+.vscode-test/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+.loadpath
+
+# ============================================
+# Framework Specific
+# ============================================
 # Next.js
 .next/
 next-env.d.ts
@@ -58,50 +162,64 @@ next-env.d.ts
 # Nuxt.js
 .nuxt/
 
-# Build artifacts
-*.tsbuildinfo
+# Vite
+vite.config.*.timestamp-*
 
-# Cache directories
+# Remix
 .cache/
-.bun/
-.turbo/
-.parcel-cache/
+build/
+public/build/
+.env
 
-# Temporary files
-tmp/
-temp/
-*.tmp
-
-# IDEs
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.iml
-.project
-.classpath
-.settings/
-
-# OS
-Thumbs.db
-.AppleDouble
-.LSOverride
-._*
-
+# ============================================
 # Database
+# ============================================
 *.db
+*.db-shm
+*.db-wal
 *.sqlite
 *.sqlite3
+drizzle/
 
-# Uploads
+# ============================================
+# Uploads & Media
+# ============================================
 uploads/
 public/uploads/
+static/uploads/
 
+# ============================================
 # Docker
+# ============================================
 .dockerignore
 
-# Vercel
+# ============================================
+# Deployment
+# ============================================
 .vercel
+.netlify
 
-# Sentry
+# ============================================
+# Security & Secrets
+# ============================================
+*.pem
+*.key
+*.cert
+*.crt
 .sentryclirc
+secrets.yaml
+credentials.json
+
+# ============================================
+# WeChat Mini Program
+# ============================================
+# 小程序项目私有配置
+apps/miniprogram/project.private.config.json
+
+# ============================================
+# Misc
+# ============================================
+.husky/_
+storybook-static/
+*.bak
+*.backup
