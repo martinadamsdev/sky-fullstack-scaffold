@@ -280,10 +280,10 @@ kubectl apply -f packages/deployment/k8s/
 
 ## 下一步计划
 
-- [ ] 添加 Biome 代码检查和格式化
-- [ ] 配置 Husky Git Hooks
-- [ ] 添加 Changesets 版本管理
-- [ ] 实现 shared packages (utils, types, ui)
+- [x] 添加 Biome 代码检查和格式化
+- [x] 配置 Husky Git Hooks
+- [x] 添加 Changesets 版本管理
+- [x] 实现 shared packages (utils, types, ui)
 - [ ] 配置 GitHub Actions CI/CD
 - [ ] 完善 Kubernetes 配置
 - [ ] 添加 E2E 测试 (Playwright)
