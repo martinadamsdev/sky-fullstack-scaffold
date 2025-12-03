@@ -16,6 +16,7 @@ shalom/
 │   └── deployment/     # 部署配置 (Docker, K8s)
 ├── package.json        # Workspace 配置
 ├── bunfig.toml         # Bun 全局配置
+├── biome.json          # Biome 配置 (代码检查和格式化)
 ├── tsconfig.json       # TypeScript 全局配置
 └── .env.example        # 环境变量模板
 ```
@@ -136,8 +137,11 @@ bun db:studio        # 打开 Drizzle Studio
 
 ```bash
 bun typecheck        # TypeScript 类型检查
-bun lint             # 代码检查
-bun format           # 代码格式化
+bun lint             # Biome 代码检查
+bun lint:fix         # Biome 自动修复问题
+bun format           # Biome 代码格式化
+bun check            # Biome 完整检查 (lint + format)
+bun check:fix        # Biome 自动修复并格式化
 bun clean            # 清理构建产物和依赖
 ```
 
