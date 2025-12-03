@@ -213,8 +213,8 @@ credentials.json
 # ============================================
 # WeChat Mini Program
 # ============================================
-# 小程序项目私有配置
-apps/miniprogram/project.private.config.json
+# 小程序本地调试文件 (不提交个人开发配置)
+# apps/miniprogram/project.private.config.json
 
 # ============================================
 # Misc

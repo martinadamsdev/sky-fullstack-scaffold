@@ -1,0 +1,11 @@
+# WeChat DevTools
+.DS_Store
+node_modules/
+miniprogram_npm/
+unpackage/
+
+# Logs
+*.log
+
+# Test
+coverage/
