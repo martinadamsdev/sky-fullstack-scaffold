@@ -1,0 +1,43 @@
+{
+  "name": "shalom-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:api": "bun run --filter @shalom/api dev",
+    "dev:web": "bun run --filter @shalom/web dev",
+    "dev:admin": "bun run --filter @shalom/admin dev",
+    "dev:mobile": "bun run --filter @shalom/mobile dev",
+    "build": "bun run --filter '*' build",
+    "build:api": "bun run --filter @shalom/api build",
+    "build:web": "bun run --filter @shalom/web build",
+    "build:admin": "bun run --filter @shalom/admin build",
+    "build:mobile": "bun run --filter @shalom/mobile build",
+    "test": "bun test",
+    "test:api": "bun run --filter @shalom/api test",
+    "test:web": "bun run --filter @shalom/web test",
+    "test:admin": "bun run --filter @shalom/admin test",
+    "test:mobile": "bun run --filter @shalom/mobile test",
+    "db:generate": "bun run --filter @shalom/api db:generate",
+    "db:migrate": "bun run --filter @shalom/api db:migrate",
+    "db:push": "bun run --filter @shalom/api db:push",
+    "db:studio": "bun run --filter @shalom/api db:studio",
+    "clean": "bun run --filter '*' clean && rm -rf node_modules",
+    "typecheck": "bun run --filter '*' typecheck",
+    "lint": "bun run --filter '*' lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
