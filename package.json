@@ -29,12 +29,15 @@
     "db:studio": "bun run --filter @shalom/api db:studio",
     "clean": "bun run --filter '*' clean && rm -rf node_modules",
     "typecheck": "bun run --filter '*' typecheck",
-    "lint": "bun run --filter '*' lint",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check .",
+    "check:fix": "biome check --write ."
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "prettier": "^3.1.1",
+    "@biomejs/biome": "^1.9.4",
     "typescript": "^5.3.3"
   },
   "engines": {
