@@ -35,6 +35,6 @@
     "@types/bun": "latest",
     "@types/pg": "latest",
     "drizzle-kit": "latest",
-    "typescript": "^5.3.3"
+    "@typescript/native-preview": "latest"
   }
 }
