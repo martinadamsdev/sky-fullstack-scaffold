@@ -1,5 +1,2 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 # Validate commit message format (Angular convention)
 bunx commitlint --edit $1
