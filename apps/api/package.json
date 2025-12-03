@@ -1,0 +1,40 @@
+{
+  "name": "@shalom/api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "elysia": "latest",
+    "@elysiajs/bearer": "latest",
+    "@elysiajs/cors": "latest",
+    "@elysiajs/cron": "latest",
+    "@elysiajs/jwt": "latest",
+    "@elysiajs/static": "latest",
+    "@elysiajs/swagger": "latest",
+    "@elysiajs/apollo": "latest",
+    "@elysiajs/server-timing": "latest",
+    "@elysiajs/opentelemetry": "latest",
+    "better-auth": "latest",
+    "drizzle-orm": "latest",
+    "pg": "latest",
+    "ioredis": "latest",
+    "dotenv": "latest",
+    "react-email": "latest",
+    "@graphql-tools/schema": "latest",
+    "graphql": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "latest",
+    "drizzle-kit": "latest",
+    "typescript": "^5.3.3"
+  }
+}
